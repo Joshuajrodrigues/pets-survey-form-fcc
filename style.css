@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    background: grey;
+    background-size: cover;
+
+}
+#container{
+    font-family: 'Source Code Pro', monospace;
+    background-color: aliceblue;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh
+}
+h1{
+    font-family: 'Bangers', cursive;
+}
+;
+
+#submit{
+    font-family: 'Source Code Pro', monospace;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey on pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1 id=title>Tell me about your pets!</h1>
+        <p id="description"> Thankyou for taking your time in helping me out with this form</p>
+        <form id="survey-form">
+
+            <label for="name" id="name-label" >Name:</label>
+            <input required name="name" id="name" type="text" placeholder="Your Name">
+            <br>
+            <label for="email" id="email-label">Email:</label>
+            <input required type="email" name="email" id="email" placeholder="youremail@somemail.com">
+            <br>
+            <label  for="age" id="number-label" >Age: (optional)</label>
+            <input  type="number" name="age" id="number" min="18" max="90" placeholder="Age">
+            <br>
+            <hr>
+            <h2>Lets Begin !</h2>
+            <br>
+            <label for="type">What kind is your pet ?</label><br>
+            <input type="checkbox" name="type" value="Dog" id="">Dog <br>
+            <input type="checkbox" name="type" value="Cat" id="">Cat    <br>
+            <input type="checkbox" name="type" value="Cat" id="">Snake  <br>
+            <input type="checkbox" name="type" value="Cat" id="">Frog   <br>
+            <input type="checkbox" name="type" value="Cat" id="">Parrot <br>
+            <input type="checkbox" name="type" value="Cat" id="">Rat    <br>
+            <input type="checkbox" name="type" value="Cat" id="">Hedgehog   <br>
+            <input type="checkbox" name="type" value="Cat" id="">Other  <br>
+            <input type="text" placeholder="If Other Specify It Here">
+            <br>
+            <hr>
+            <br>
+            <label for="dropdown">Was your pet a gift ?</label><br>
+            <select name="gift" id="dropdown">
+                <option value="" disabled selected hidden>-select-</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <label for="vac">Is your pet vaccinated  ?</label><br>
+            <select name="vac" id="vac">
+                <option value="" disabled selected hidden>-select-</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <label for="doc">Does your pet like going to the vet ?</label><br>
+            <select name="doc" id="doc">
+                <option value="" disabled selected hidden>-select-</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <br>
+            <hr>
+            <br>
+
+            <label for="pet-age">How long has your pet been with you ?</label><br>
+            <input value="true" type="radio" name="pet-age" id="1">0-5yrs <br>
+            <input value="false" type="radio" name="pet-age" id="2">6-10yrs <br>
+            <input value="false" type="radio" name="pet-age" id="3">11-15yrs <br>
+            <input value="false" type="radio" name="pet-age" id="2">16-20yrs <br>
+            <input value="false" type="radio" name="pet-age" id="2">20+yrs <br>
+            <hr>
+            <br>
+            <label for="text-area">What is your favourite memory with your pet ?</label><br>
+            <textarea style="resize: none; overflow: auto;" name="text-area" id="" cols="30" rows="10"></textarea>
+            <br>
+            <hr>
+            <br>
+            <button type="submit" id="submit">Submit</button>
+            
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
